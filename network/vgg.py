@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
 
 import numpy as np
 
-import load_data as ld
+import utils.load_data as ld
 
 
 class VggBlock(Model):
