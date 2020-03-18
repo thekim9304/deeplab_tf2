@@ -11,7 +11,7 @@ def load_mnist():
     x_train = x_train[..., tf.newaxis]
     x_test = x_test[..., tf.newaxis]
 
-    print('x_train.shape : {}, x_test.shape : {}'.format(x_train.shape, x_test.shape))
+    # print('x_train.shape : {}, x_test.shape : {}'.format(x_train.shape, x_test.shape))
 
     train_ds = tf.data.Dataset.from_tensor_slices(
         (x_train, y_train)).shuffle(10000).batch(32)

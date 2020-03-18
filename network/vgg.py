@@ -4,9 +4,6 @@ from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
 
 import utils.load_data as ld
 
-import os
-os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
-
 
 class VggBlock(Model):
     def __init__(self, layer_num, depth):
@@ -51,25 +48,23 @@ class Vgg(Model):
         return x
 
 
-
 def main():
-    model = Vgg(10, [2, 3], [64, 64])
+    model = Vgg(10, [2, 2, 3, 3, 3], [63, 128, 256, 512, 512])
 
     model.compile(optimizer=tf.keras.optimizers.RMSprop(learning_rate=1e-3),
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['sparse_categorical_accuracy'])
 
-    model.build(input_shape=(None, 28, 28, 1))
+    model.build(input_shape=(None, 224, 224, 3))
 
     model.summary()
-    tf.keras.utils.plot_model(model, './test.png', show_shapes=True)
 
     # x_train, y_train = ld.load_mnist()
-    # print(x_train.shape, y_train.shape)
-
     train_ds, test_ds = ld.load_mnist()
 
-    # model.fit(train_ds, epochs=2)
+    # model.fit(x_train, y_train, batch_size=32, epochs=5)
+    for train, y in train_ds:
+        print(train.numpy().shape)
 
 if __name__ == '__main__':
     main()
