@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/resnet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/vgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/vgg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
       <recent name="C:\Users\th_k9\Desktop\study\deeplab_tf2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.vgg">
+  <component name="RunManager" selected="Python.vgg (1)">
     <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,6 +54,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="resnet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/resnet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vgg (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/vgg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.vgg (1)" />
         <item itemvalue="Python.vgg" />
+        <item itemvalue="Python.resnet" />
         <item itemvalue="Python.model" />
       </list>
     </recent_temporary>
@@ -102,6 +147,16 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="2207" y="435" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1584176530773">
       <screen x="1920" y="-340" width="1080" height="1880" />
@@ -111,25 +166,25 @@
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584344224929" />
-    <state width="1899" height="122" key="GridCell.Tab.0.bottom" timestamp="1584446498577">
+    <state width="1899" height="177" key="GridCell.Tab.0.bottom" timestamp="1584449942008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446498577" />
+    <state width="1899" height="177" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449942008" />
     <state width="1059" height="684" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584342088969" />
-    <state width="1899" height="122" key="GridCell.Tab.0.center" timestamp="1584446498577">
+    <state width="1899" height="177" key="GridCell.Tab.0.center" timestamp="1584449942008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446498577" />
+    <state width="1899" height="177" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449942008" />
     <state width="1059" height="684" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584342088969" />
-    <state width="1899" height="122" key="GridCell.Tab.0.left" timestamp="1584446498577">
+    <state width="1899" height="177" key="GridCell.Tab.0.left" timestamp="1584449942007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446498577" />
+    <state width="1899" height="177" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449942007" />
     <state width="1059" height="684" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584342088969" />
-    <state width="1899" height="122" key="GridCell.Tab.0.right" timestamp="1584446498577">
+    <state width="1899" height="177" key="GridCell.Tab.0.right" timestamp="1584449942008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446498577" />
+    <state width="1899" height="177" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449942008" />
     <state width="1059" height="684" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584342088969" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584432678165">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -159,6 +214,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446640635" />
+    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584449867759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449867759" />
     <state x="1911" y="-258" width="1096" height="832" maximized="true" key="dock-window-1" timestamp="1584261465031">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>

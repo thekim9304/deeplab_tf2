@@ -17,5 +17,5 @@ def load_mnist():
         (x_train, y_train)).shuffle(10000).batch(32)
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).batch(32)
 
-    # return train_ds, test_ds
-    return x_train, y_train
+    return train_ds, test_ds
+    # return x_train, y_train

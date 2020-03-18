@@ -1,10 +1,11 @@
 import tensorflow as tf
-from tensorflow.keras import Input, Model, Sequential
+from tensorflow.keras import Model, Sequential
 from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
 
-import numpy as np
-
 import utils.load_data as ld
+
+import os
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
 
 class VggBlock(Model):
@@ -32,7 +33,6 @@ class Vgg(Model):
         self.depth_list = depth_list
 
         self.blocks = Sequential()
-
         for layer_num, depth in zip(self.block_list, self.depth_list):
             self.blocks.add(VggBlock(layer_num, depth))
 
@@ -51,6 +51,7 @@ class Vgg(Model):
         return x
 
 
+
 def main():
     model = Vgg(10, [2, 3], [64, 64])
 
@@ -60,13 +61,15 @@ def main():
 
     model.build(input_shape=(None, 28, 28, 1))
 
-    x_train, y_train = ld.load_mnist()
-    print(x_train.shape, y_train.shape)
+    model.summary()
+    tf.keras.utils.plot_model(model, './test.png', show_shapes=True)
 
-    model.fit(x_train, y_train,
-              batch_size=64,
-              epochs=10)
+    # x_train, y_train = ld.load_mnist()
+    # print(x_train.shape, y_train.shape)
 
+    train_ds, test_ds = ld.load_mnist()
+
+    # model.fit(train_ds, epochs=2)
 
 if __name__ == '__main__':
     main()
