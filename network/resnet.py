@@ -5,9 +5,6 @@ from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense, Input, Ad
 
 import utils.load_data as ld
 
-import cv2
-import numpy as np
-
 
 class ResNetBlock(Model):
     def __init__(self, n_layer, cycle, depth, d_sampling=True):

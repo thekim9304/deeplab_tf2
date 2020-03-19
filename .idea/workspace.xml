@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/network/dense.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/resnet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/vgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/vgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,28 @@
       <recent name="C:\Users\th_k9\Desktop\study\deeplab_tf2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.resnet">
+  <component name="RunManager" selected="Python.dense">
+    <configuration name="dense" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/dense.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dense" />
         <item itemvalue="Python.resnet" />
         <item itemvalue="Python.vgg (1)" />
         <item itemvalue="Python.vgg" />
@@ -183,26 +204,26 @@
     </state>
     <state x="569" y="376" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584493320491" />
     <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584344224929" />
-    <state width="1059" height="616" key="GridCell.Tab.0.bottom" timestamp="1584534617671">
+    <state width="1059" height="517" key="GridCell.Tab.0.bottom" timestamp="1584600069722">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="616" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584534617671" />
-    <state width="1059" height="616" key="GridCell.Tab.0.center" timestamp="1584534617671">
+    <state width="1059" height="517" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600069722" />
+    <state width="1059" height="517" key="GridCell.Tab.0.center" timestamp="1584600069722">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="616" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584534617671" />
-    <state width="1059" height="616" key="GridCell.Tab.0.left" timestamp="1584534617671">
+    <state width="1059" height="517" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600069722" />
+    <state width="1059" height="517" key="GridCell.Tab.0.left" timestamp="1584600069722">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="616" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584534617671" />
-    <state width="1059" height="616" key="GridCell.Tab.0.right" timestamp="1584534617671">
+    <state width="1059" height="517" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600069722" />
+    <state width="1059" height="517" key="GridCell.Tab.0.right" timestamp="1584600069722">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="616" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584534617671" />
+    <state width="1059" height="517" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600069722" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584493236587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,6 +262,18 @@
     </state>
     <state x="1911" y="-258" width="1096" height="832" maximized="true" key="dock-window-1/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584261465031" />
     <state x="642" y="0" width="944" height="1128" key="dock-window-1/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584534680145" />
+    <state x="463" y="0" width="944" height="1128" key="dock-window-2" timestamp="1584535747503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="0" width="944" height="1128" key="dock-window-2/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584535747503" />
+    <state x="1241" y="182" width="944" height="1160" key="dock-window-3" timestamp="1584599318448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1241" y="182" width="944" height="1160" key="dock-window-3/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584599318448" />
+    <state x="565" y="0" width="944" height="1128" key="dock-window-4" timestamp="1584600064879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="0" width="944" height="1128" key="dock-window-4/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600064879" />
     <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup" timestamp="1584532458201">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
