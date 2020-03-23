@@ -25,54 +25,51 @@ import ipykernel
 import utils.load_data as ld
 
 
-class ConvBlock(Model):
-    def __init__(self):
-        super(ConvBlock, self).__init__()
+class _ConvBlock(Model):
+    def __init__(self, growth_rate, activation):
+        super(_ConvBlock, self).__init__()
 
-
-
-class DenseBlock(Model):
-    def __init__(self, cycle, growth_rate, activation='relu'):
-        super(DenseBlock, self).__init__()
-
-        self.layer_list = []
-        for _ in range(cycle):
-            for i in range(2):
-                if i == 0:
-                    g_rate = growth_rate * 4
-                    filters = (1, 1)
-                else:
-                    g_rate = growth_rate
-                    filters = (3, 3)
-
-                self.layer_list.append(BatchNormalization())
-                self.layer_list.append(Activation(activation))
-                self.layer_list.append(Conv2D(g_rate, filters, padding='same'))
-
+        self.bn1 = BatchNormalization()
+        self.acti1 = Activation(activation=activation)
+        self.conv1 = Conv2D(4 * growth_rate, 1, padding='same')
+        self.bn2 = BatchNormalization()
+        self.acti2 = Activation(activation=activation)
+        self.conv2 = Conv2D(growth_rate, 3, padding='same')
         self.concat = Concatenate()
 
     def call(self, x, *args):
-        c_x = x
-        for i, layer in enumerate(self.layer_list):
-            if i % 2 is 0:
-                c_x = x
+        x_t = self.bn1(x)
+        x_t = self.acti1(x_t)
+        x_t = self.conv1(x_t)
+        x_t = self.bn2(x_t)
+        x_t = self.acti2(x_t)
+        x_t = self.conv2(x_t)
 
+        return self.concat([x, x_t])
+
+
+class _DenseBlock(Model):
+    def __init__(self, blocks, growth_rate, activation='relu'):
+        super(_DenseBlock, self).__init__()
+
+        self.layer_list = []
+        for _ in range(blocks):
+            self.layer_list.append(_ConvBlock(growth_rate, activation))
+
+    def call(self, x, *args):
+        for layer in self.layer_list:
             x = layer(x)
-
-            if i % 2 is not 0:
-                x = self.concat([c_x, x])
 
         return x
 
 
-
-class TransitionLayer(Model):
-    def __init__(self, depth, compression_factor=1, activation='relu'):
-        super(TransitionLayer, self).__init__()
+class _TransitionLayer(Model):
+    def __init__(self, depth, compression_factor=0.5, activation='relu'):
+        super(_TransitionLayer, self).__init__()
 
         self.bn = BatchNormalization()
         self.activation = Activation(activation)
-        self.conv = Conv2D(depth * compression_factor, (1, 1), padding='same')
+        self.conv = Conv2D(int(depth * compression_factor), (1, 1), padding='same')
         self.avgpool = AvgPool2D((2, 2), padding='same', strides=2)
 
     def call(self, x, *args):
@@ -80,12 +77,12 @@ class TransitionLayer(Model):
         x = self.activation(x)
         x = self.conv(x)
         x = self.avgpool(x)
-        print(x.shape)
 
         return x
 
+
 class DenseNet(Model):
-    def __init__(self, class_num=1000, num_in_block=None, growth_rate=32, compression_factor=1, activation='relu'):
+    def __init__(self, class_num=1000, num_in_block=None, growth_rate=32, compression_factor=0.5, activation='relu'):
         super(DenseNet, self).__init__()
 
         if num_in_block is None:
@@ -96,26 +93,22 @@ class DenseNet(Model):
 
         self.blocks = Sequential()
         for i in range(4):
-            self.blocks.add(DenseBlock(num_in_block[i] , growth_rate, activation))
+            self.blocks.add(_DenseBlock(num_in_block[i], growth_rate, activation))
             if i != 3:
-                self.blocks.add(TransitionLayer(growth_rate, compression_factor, activation))
+                self.blocks.add(_TransitionLayer(growth_rate, compression_factor, activation))
 
         self.gap = GlobalAveragePooling2D()
         self.predict = Dense(class_num, activation='softmax')
 
     def call(self, x, *args):
-        print('in', x)
         x = self.conv1(x)
-        print('conv1', x.shape)
         x = self.maxpool(x)
-        print('mp1', x.shape)
         x = self.blocks(x)
-        print('blocks', x.shape)
         x = self.gap(x)
-        print('gap', x)
         x = self.predict(x)
 
         return x
+
 
 def main():
     model = DenseNet(10)
@@ -128,6 +121,7 @@ def main():
     x = model(x)
 
     print(x.shape)
+
 
 if __name__ == '__main__':
     main()
