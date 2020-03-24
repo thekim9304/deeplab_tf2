@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/dense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/vgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/vgg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Z73q8GnI71sDe03SfEHFrfEWsj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,7 +40,7 @@
       <recent name="C:\Users\th_k9\Desktop\study\deeplab_tf2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dense">
+  <component name="RunManager" selected="Python.vgg (1)">
     <configuration name="dense" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,9 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.vgg (1)" />
         <item itemvalue="Python.dense" />
         <item itemvalue="Python.resnet" />
-        <item itemvalue="Python.vgg (1)" />
         <item itemvalue="Python.vgg" />
         <item itemvalue="Python.model" />
       </list>
@@ -190,6 +192,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2215" y="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584945608222">
+      <screen x="1920" y="-340" width="1080" height="1880" />
+    </state>
+    <state x="2215" y="402" key="#com.intellij.fileTypes.FileTypeChooser/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584945608222" />
     <state x="2207" y="435" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1584176530773">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
@@ -203,26 +209,30 @@
     </state>
     <state x="569" y="376" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584493320491" />
     <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584602009797" />
-    <state width="1059" height="517" key="GridCell.Tab.0.bottom" timestamp="1584943223358">
+    <state x="2279" y="512" key="Github.CreateGistDialog" timestamp="1585029022258">
+      <screen x="1920" y="-340" width="1080" height="1880" />
+    </state>
+    <state x="2279" y="512" key="Github.CreateGistDialog/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029022258" />
+    <state width="1059" height="517" key="GridCell.Tab.0.bottom" timestamp="1585029058957">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584943223358" />
-    <state width="1059" height="517" key="GridCell.Tab.0.center" timestamp="1584943223358">
+    <state width="1059" height="517" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
+    <state width="1059" height="517" key="GridCell.Tab.0.center" timestamp="1585029058957">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584943223358" />
-    <state width="1059" height="517" key="GridCell.Tab.0.left" timestamp="1584943223358">
+    <state width="1059" height="517" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
+    <state width="1059" height="517" key="GridCell.Tab.0.left" timestamp="1585029058957">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584943223358" />
-    <state width="1059" height="517" key="GridCell.Tab.0.right" timestamp="1584943223358">
+    <state width="1059" height="517" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
+    <state width="1059" height="517" key="GridCell.Tab.0.right" timestamp="1585029058957">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state width="1899" height="336" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584943223358" />
+    <state width="1059" height="517" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584493236587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -252,10 +262,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446640635" />
-    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584449867759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2350" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585029031157">
+      <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449867759" />
+    <state x="2350" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029031157" />
     <state x="633" y="0" width="944" height="1128" maximized="true" key="dock-window-1" timestamp="1584939609832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

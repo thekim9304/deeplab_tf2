@@ -2,6 +2,8 @@ import tensorflow as tf
 from tensorflow.keras import Model, Sequential
 from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
 
+import ipykernel
+
 import utils.load_data as ld
 
 
@@ -49,22 +51,23 @@ class Vgg(Model):
 
 
 def main():
-    model = Vgg(10, [2, 2, 3, 3, 3], [63, 128, 256, 512, 512])
+    in_size = (None, 28, 28, 1)
+
+    model = Vgg(10, [2, 2], [63, 128])
 
     model.compile(optimizer=tf.keras.optimizers.RMSprop(learning_rate=1e-3),
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['sparse_categorical_accuracy'])
 
-    model.build(input_shape=(None, 224, 224, 3))
+    model.build(input_shape=in_size)
 
     model.summary()
 
-    # x_train, y_train = ld.load_mnist()
-    train_ds, test_ds = ld.load_mnist()
+    x_train, y_train = ld.load_mnist()
+    # train_ds, test_ds = ld.load_mnist()
+    # model.fit(train_ds, epochs=5)
+    model.fit(x_train, y_train, epochs=5)
 
-    # model.fit(x_train, y_train, batch_size=32, epochs=5)
-    for train, y in train_ds:
-        print(train.numpy().shape)
 
 if __name__ == '__main__':
     main()
