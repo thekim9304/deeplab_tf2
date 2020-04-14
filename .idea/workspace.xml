@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/decoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/deeplabv3p.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/encoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/vgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/network/vgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +31,9 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Z73q8GnI71sDe03SfEHFrfEWsj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,8 +50,8 @@
       <recent name="C:\Users\th_k9\Desktop\study\deeplab_tf2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.vgg (1)">
-    <configuration name="dense" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.deeplabv3p (1)">
+    <configuration name="decoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,11 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplanv3+" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/dense.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplanv3+/decoder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deeplabv3p (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,11 +80,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3p" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/deeplabv3p.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deeplabv3p" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3+" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3+/deeplabv3p.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="encoder (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3p" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/encoder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,53 +143,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3p/backbone" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/resnet.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vgg (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="deeplab_tf2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/network/vgg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vgg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="deeplab_tf2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\th_k9\Desktop\study\deeplab_tf2\vgg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.vgg (1)" />
-        <item itemvalue="Python.dense" />
+        <item itemvalue="Python.deeplabv3p (1)" />
+        <item itemvalue="Python.encoder (1)" />
         <item itemvalue="Python.resnet" />
-        <item itemvalue="Python.vgg" />
-        <item itemvalue="Python.model" />
+        <item itemvalue="Python.deeplabv3p" />
+        <item itemvalue="Python.decoder" />
       </list>
     </recent_temporary>
   </component>
@@ -204,35 +214,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="113" key="CommitChangelistDialog2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584493220843" />
-    <state x="2240" y="340" key="FileChooserDialogImpl" timestamp="1584602009797">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state x="569" y="376" key="FileChooserDialogImpl" timestamp="1585726662914">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="569" y="376" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584493320491" />
-    <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584602009797" />
+    <state x="569" y="376" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585726662914" />
+    <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585030751040" />
     <state x="2279" y="512" key="Github.CreateGistDialog" timestamp="1585029022258">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="2279" y="512" key="Github.CreateGistDialog/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029022258" />
-    <state width="1059" height="517" key="GridCell.Tab.0.bottom" timestamp="1585029058957">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state width="1899" height="232" key="GridCell.Tab.0.bottom" timestamp="1586855469958">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="336" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
-    <state width="1059" height="517" key="GridCell.Tab.0.center" timestamp="1585029058957">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state width="1899" height="232" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1059" height="623" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
+    <state width="1899" height="232" key="GridCell.Tab.0.center" timestamp="1586855469958">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="336" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
-    <state width="1059" height="517" key="GridCell.Tab.0.left" timestamp="1585029058957">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state width="1899" height="232" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1059" height="623" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
+    <state width="1899" height="232" key="GridCell.Tab.0.left" timestamp="1586855469958">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="336" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
-    <state width="1059" height="517" key="GridCell.Tab.0.right" timestamp="1585029058957">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state width="1899" height="232" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1059" height="623" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
+    <state width="1899" height="232" key="GridCell.Tab.0.right" timestamp="1586855469958">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="336" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584532343157" />
-    <state width="1059" height="517" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029058957" />
+    <state width="1899" height="232" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1059" height="623" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584493236587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,10 +277,10 @@
     </state>
     <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449867759" />
     <state x="2350" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029031157" />
-    <state x="633" y="0" width="944" height="1128" maximized="true" key="dock-window-1" timestamp="1584939609832">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1990" y="232" width="1096" height="973" maximized="true" key="dock-window-1" timestamp="1586854692162">
+      <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
-    <state x="1911" y="-258" width="1096" height="832" maximized="true" key="dock-window-1/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584261465031" />
+    <state x="1990" y="232" width="1096" height="973" maximized="true" key="dock-window-1/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586854692162" />
     <state x="633" y="0" width="944" height="1128" maximized="true" key="dock-window-1/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584939609832" />
     <state x="463" y="0" width="944" height="1128" key="dock-window-2" timestamp="1584535747503">
       <screen x="0" y="0" width="1920" height="1040" />
