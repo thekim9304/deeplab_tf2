@@ -1,5 +1,12 @@
 import tensorflow as tf
+import cv2
 
+def img_size_check(img):
+    h, w = img.shape[:2]
+    modi_h = h + (4 - (h % 4))
+    modi_w = w + (4 - (w % 4))
+
+    return cv2.resize(img, (modi_w, modi_h))
 
 def load_mnist():
     mnist = tf.keras.datasets.mnist

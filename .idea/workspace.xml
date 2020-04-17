@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/decoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/deeplabv3p.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/encoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+    <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="deeplabv3p 구현중">
+      <change afterPath="$PROJECT_DIR$/classification/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classification/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classification/utils/load_data_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation/utils/load_data_segmentation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/cat.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/0/dataforamt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cat&amp;dog/1/dog.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/densenet_table.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fullpreactivation.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/resnet_archi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/resnet_table.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/model/decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/deeplabv3p.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/model/deeplabv3p.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation/deeplabv3p/model/encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +67,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -49,9 +77,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\th_k9\Desktop\study\deeplab_tf2" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\th_k9\Desktop\study\tf2.0\classification\utils" />
+      <recent name="C:\Users\th_k9\Desktop\study\tf2.0\segmentation\deeplabv3p\model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.deeplabv3p (1)">
-    <configuration name="decoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="code_study" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +91,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplanv3+" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplanv3+/decoder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/code_study.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deeplabv3p (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deeplabv3p" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,7 +116,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/deeplabv3p.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\th_k9\Desktop\study\tf2.0\segmentation\deeplabv3p\model\deeplabv3p.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deeplabv3p" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="load_data_classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3+" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classification/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3+/deeplabv3p.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\th_k9\Desktop\study\tf2.0\classification\utils\load_data_classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +146,49 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="encoder (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="load_data_classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classification/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\th_k9\Desktop\study\tf2.0\classification\utils\load_data_classification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load_data_segmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\th_k9\Desktop\study\tf2.0\segmentation\utils\load_data_segmentation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,28 +200,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/encoder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="resnet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="deeplab_tf2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/segmentation/deeplabv3p/backbone" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/segmentation/deeplabv3p/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.deeplabv3p (1)" />
-        <item itemvalue="Python.encoder (1)" />
-        <item itemvalue="Python.resnet" />
-        <item itemvalue="Python.deeplabv3p" />
-        <item itemvalue="Python.decoder" />
+        <item itemvalue="Python.load_data_classification" />
+        <item itemvalue="Python.load_data_segmentation" />
+        <item itemvalue="Python.load_data_classification" />
+        <item itemvalue="Python.code_study" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584493209259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deeplabv3p 구현중">
+      <created>1586855550765</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586855550766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -198,8 +258,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="deeplabv3p 구현중" />
+    <option name="LAST_COMMIT_MESSAGE" value="deeplabv3p 구현중" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2215" y="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584945608222">
@@ -210,10 +272,10 @@
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="2207" y="435" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584176530773" />
-    <state x="609" y="113" key="CommitChangelistDialog2" timestamp="1584493220843">
+    <state x="609" y="113" key="CommitChangelistDialog2" timestamp="1586855559078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="113" key="CommitChangelistDialog2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584493220843" />
+    <state x="609" y="113" key="CommitChangelistDialog2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855559078" />
     <state x="569" y="376" key="FileChooserDialogImpl" timestamp="1585726662914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -223,25 +285,25 @@
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="2279" y="512" key="Github.CreateGistDialog/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029022258" />
-    <state width="1899" height="232" key="GridCell.Tab.0.bottom" timestamp="1586855469958">
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1587113073038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587113073038" />
     <state width="1059" height="623" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="232" key="GridCell.Tab.0.center" timestamp="1586855469958">
+    <state width="1899" height="271" key="GridCell.Tab.0.center" timestamp="1587113073038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1899" height="271" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587113073038" />
     <state width="1059" height="623" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="232" key="GridCell.Tab.0.left" timestamp="1586855469958">
+    <state width="1899" height="271" key="GridCell.Tab.0.left" timestamp="1587113073038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1899" height="271" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587113073038" />
     <state width="1059" height="623" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="232" key="GridCell.Tab.0.right" timestamp="1586855469958">
+    <state width="1899" height="271" key="GridCell.Tab.0.right" timestamp="1587113073038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855469958" />
+    <state width="1899" height="271" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587113073038" />
     <state width="1059" height="623" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584493236587">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -272,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584446640635" />
-    <state x="2350" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585029031157">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586855599909">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584449867759" />
+    <state x="764" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855599909" />
     <state x="2350" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029031157" />
     <state x="1990" y="232" width="1096" height="973" maximized="true" key="dock-window-1" timestamp="1586854692162">
       <screen x="1920" y="-340" width="1080" height="1880" />
@@ -294,10 +356,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="0" width="944" height="1128" key="dock-window-4/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600064879" />
-    <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup" timestamp="1584532458201">
-      <screen x="1920" y="-340" width="1080" height="1880" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586933738730">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1584441449819" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586933738730" />
     <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584532458201" />
   </component>
 </project>
