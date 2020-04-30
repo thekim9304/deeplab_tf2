@@ -1,8 +1,8 @@
 from tensorflow.keras import Model, Input
 
-from segmentation.deeplabv3p.model.decoder import Decoder
-from segmentation.deeplabv3p.model.encoder import Encoder
-from segmentation.deeplabv3p.backbone.resnet import ResNet
+from _03segmentation.deeplabv3p.model.decoder import Decoder
+from _03segmentation.deeplabv3p.model.encoder import Encoder
+from _03segmentation.deeplabv3p.backbone.resnet import ResNet
 
 
 class Deeplabv3(Model):

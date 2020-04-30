@@ -20,12 +20,6 @@ def load_data_to_classification(root_path, data_gen_args, img_size=(256, 256), b
                                              batch_size=batch_size,
                                              seed=seed)
 
-# return image_generator.flow_from_directory(directory=str(data_dir),
-#                                            batch_size=batch_size,
-#                                            shuffle=True,
-#                                            target_size=size,
-#                                            classes=list(class_names))
-
 # cat&dog
 #     ㄴ class1
 #         ㄴ class1_img1.jpg

@@ -1,10 +1,9 @@
-from segmentation.deeplabv3p.model.deeplabv3p import Deeplabv3
+from _03segmentation.deeplabv3p.model.deeplabv3p import Deeplabv3
 from utils.load_data import img_size_check
 import tensorflow as tf
 
 import cv2
 import numpy as np
-
 
 def main():
     img_path = './data/image/000000_10.png'

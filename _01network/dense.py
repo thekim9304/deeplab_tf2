@@ -17,7 +17,7 @@ m]개 생성한다.
 
 import tensorflow as tf
 from tensorflow.keras import Model, Sequential
-from tensorflow.keras.layers import Conv2D, MaxPool2D, AvgPool2D, BatchNormalization, Activation,\
+from tensorflow.keras.layers import Conv2D, MaxPool2D, AvgPool2D, BatchNormalization, Activation, \
     Flatten, Dense, Input, Concatenate, GlobalAveragePooling2D
 
 import ipykernel
