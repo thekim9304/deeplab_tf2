@@ -2,845 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3924085a-64d6-46fa-8da4-da4b72a0934c" name="Default Changelist" comment="deeplabv3p 구현중">
-      <change afterPath="$PROJECT_DIR$/_01network/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_01network/dense.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_01network/resnet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_01network/vgg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_02classification/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_02classification/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_02classification/utils/load_data_classification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/backbone/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/backbone/resnet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000000_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000001_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000002_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000003_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000004_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000005_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000006_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000007_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000008_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000009_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000010_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000011_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000012_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000013_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000014_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000015_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000016_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000017_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000018_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000019_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000020_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000021_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000022_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000023_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000024_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000025_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000026_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000027_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000028_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000029_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000030_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000031_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000032_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000033_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000034_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000035_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000036_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000037_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000038_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000039_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000040_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000041_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000042_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000043_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000044_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000045_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000046_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000047_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000048_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000049_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000050_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000051_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000052_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000053_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000054_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000055_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000056_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000057_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000058_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000059_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000060_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000061_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000062_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000063_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000064_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000065_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000066_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000067_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000068_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000069_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000070_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000071_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000072_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000073_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000074_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000075_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000076_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000077_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000078_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000079_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000080_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000081_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000082_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000083_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000084_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000085_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000086_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000087_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000088_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000089_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000090_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000091_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000092_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000093_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000094_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000095_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000096_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000097_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000098_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000099_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000100_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000101_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000102_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000103_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000104_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000105_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000106_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000107_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000108_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000109_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000110_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000111_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000112_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000113_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000114_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000115_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000116_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000117_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000118_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000119_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000120_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000121_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000122_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000123_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000124_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000125_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000126_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000127_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000128_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000129_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000130_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000131_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000132_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000133_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000134_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000135_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000136_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000137_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000138_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000139_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000140_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000141_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000142_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000143_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000144_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000145_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000146_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000147_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000148_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000149_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000150_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000151_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000152_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000153_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000154_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000155_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000156_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000157_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000158_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000159_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000160_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000161_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000162_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000163_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000164_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000165_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000166_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000167_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000168_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000169_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000170_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000171_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000172_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000173_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000174_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000175_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000176_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000177_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000178_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000179_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000180_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000181_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000182_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000183_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000184_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000185_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000186_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000187_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000188_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000189_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000190_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000191_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000192_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000193_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000194_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000195_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000196_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000197_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000198_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/images/img/000199_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000000_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000001_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000002_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000003_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000004_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000005_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000006_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000007_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000008_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000009_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000010_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000011_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000012_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000013_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000014_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000015_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000016_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000017_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000018_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000019_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000020_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000021_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000022_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000023_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000024_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000025_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000026_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000027_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000028_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000029_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000030_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000031_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000032_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000033_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000034_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000035_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000036_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000037_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000038_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000039_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000040_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000041_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000042_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000043_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000044_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000045_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000046_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000047_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000048_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000049_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000050_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000051_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000052_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000053_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000054_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000055_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000056_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000057_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000058_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000059_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000060_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000061_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000062_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000063_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000064_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000065_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000066_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000067_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000068_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000069_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000070_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000071_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000072_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000073_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000074_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000075_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000076_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000077_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000078_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000079_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000080_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000081_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000082_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000083_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000084_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000085_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000086_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000087_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000088_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000089_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000090_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000091_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000092_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000093_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000094_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000095_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000096_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000097_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000098_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000099_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000100_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000101_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000102_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000103_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000104_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000105_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000106_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000107_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000108_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000109_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000110_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000111_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000112_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000113_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000114_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000115_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000116_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000117_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000118_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000119_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000120_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000121_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000122_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000123_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000124_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000125_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000126_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000127_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000128_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000129_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000130_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000131_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000132_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000133_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000134_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000135_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000136_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000137_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000138_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000139_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000140_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000141_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000142_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000143_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000144_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000145_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000146_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000147_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000148_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000149_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000150_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000151_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000152_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000153_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000154_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000155_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000156_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000157_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000158_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000159_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000160_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000161_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000162_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000163_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000164_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000165_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000166_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000167_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000168_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000169_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000170_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000171_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000172_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000173_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000174_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000175_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000176_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000177_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000178_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000179_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000180_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000181_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000182_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000183_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000184_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000185_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000186_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000187_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000188_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000189_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000190_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000191_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000192_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000193_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000194_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000195_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000196_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000197_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000198_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/data/masks/img/000199_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/model/decoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/model/deeplabv3p.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/deeplabv3p/model/encoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03segmentation/utils/load_data_segmentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.0 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.0 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.1 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.1 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.2 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.2 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.3 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.3 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.4 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.4 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.5 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.5 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.6 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.6 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.7 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.7 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.8 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.8 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.9 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/cat/cat.9 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.0 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.0 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.1 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.1 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.2 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.2 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.3 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.3 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.4 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.4 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.5 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.5 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.6 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.6 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.7 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.7 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.8 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.8 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.9 - 복사본 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cat&amp;dog/dog/dog.9 - 복사본.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study_room/custom_model.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/load_data_os.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification/utils/load_data_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/dense.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/resnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/vgg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/backbone/resnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000000_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000001_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000002_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000003_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000004_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000005_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000006_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000007_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000008_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000009_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000010_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000011_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000012_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000013_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000014_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000015_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000016_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000017_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000018_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000019_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000020_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000021_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000022_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000023_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000024_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000025_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000026_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000027_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000028_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000029_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000030_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000031_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000032_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000033_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000034_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000035_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000036_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000037_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000038_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000039_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000040_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000041_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000042_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000043_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000044_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000045_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000046_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000047_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000048_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000049_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000050_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000051_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000052_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000053_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000054_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000055_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000056_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000057_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000058_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000059_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000060_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000061_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000062_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000063_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000064_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000065_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000066_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000067_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000068_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000069_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000070_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000071_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000072_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000073_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000074_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000075_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000076_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000077_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000078_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000079_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000080_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000081_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000082_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000083_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000084_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000085_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000086_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000087_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000088_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000089_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000090_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000091_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000092_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000093_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000094_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000095_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000096_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000097_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000098_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000099_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000100_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000101_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000102_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000103_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000104_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000105_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000106_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000107_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000108_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000109_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000110_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000111_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000112_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000113_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000114_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000115_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000116_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000117_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000118_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000119_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000120_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000121_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000122_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000123_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000124_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000125_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000126_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000127_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000128_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000129_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000130_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000131_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000132_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000133_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000134_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000135_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000136_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000137_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000138_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000139_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000140_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000141_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000142_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000143_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000144_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000145_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000146_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000147_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000148_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000149_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000150_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000151_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000152_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000153_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000154_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000155_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000156_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000157_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000158_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000159_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000160_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000161_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000162_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000163_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000164_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000165_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000166_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000167_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000168_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000169_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000170_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000171_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000172_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000173_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000174_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000175_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000176_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000177_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000178_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000179_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000180_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000181_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000182_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000183_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000184_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000185_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000186_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000187_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000188_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000189_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000190_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000191_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000192_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000193_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000194_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000195_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000196_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000197_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000198_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/images/img/000199_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000000_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000001_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000002_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000003_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000004_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000005_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000006_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000007_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000008_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000009_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000010_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000011_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000012_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000013_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000014_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000015_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000016_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000017_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000018_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000019_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000020_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000021_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000022_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000023_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000024_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000025_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000026_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000027_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000028_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000029_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000030_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000031_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000032_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000033_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000034_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000035_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000036_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000037_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000038_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000039_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000040_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000041_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000042_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000043_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000044_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000045_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000046_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000047_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000048_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000049_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000050_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000051_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000052_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000053_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000054_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000055_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000056_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000057_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000058_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000059_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000060_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000061_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000062_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000063_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000064_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000065_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000066_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000067_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000068_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000069_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000070_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000071_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000072_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000073_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000074_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000075_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000076_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000077_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000078_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000079_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000080_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000081_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000082_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000083_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000084_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000085_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000086_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000087_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000088_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000089_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000090_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000091_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000092_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000093_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000094_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000095_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000096_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000097_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000098_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000099_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000100_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000101_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000102_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000103_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000104_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000105_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000106_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000107_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000108_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000109_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000110_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000111_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000112_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000113_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000114_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000115_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000116_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000117_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000118_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000119_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000120_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000121_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000122_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000123_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000124_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000125_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000126_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000127_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000128_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000129_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000130_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000131_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000132_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000133_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000134_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000135_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000136_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000137_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000138_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000139_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000140_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000141_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000142_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000143_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000144_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000145_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000146_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000147_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000148_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000149_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000150_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000151_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000152_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000153_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000154_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000155_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000156_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000157_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000158_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000159_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000160_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000161_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000162_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000163_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000164_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000165_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000166_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000167_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000168_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000169_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000170_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000171_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000172_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000173_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000174_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000175_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000176_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000177_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000178_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000179_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000180_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000181_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000182_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000183_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000184_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000185_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000186_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000187_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000188_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000189_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000190_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000191_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000192_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000193_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000194_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000195_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000196_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000197_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000198_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/data/masks/img/000199_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/model/decoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/model/deeplabv3p.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/deeplabv3p/model/encoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/segmentation/utils/load_data_segmentation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/load_data_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/load_data_classification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -884,7 +88,7 @@
       <recent name="C:\Users\th_k9\Desktop\study\tf2.0\segmentation\deeplabv3p\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.deeplabv3p">
+  <component name="RunManager" selected="Python.load_data_os">
     <configuration name="code_study" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -969,6 +173,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="load_data_os" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="deeplab_tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/load_data_os.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="load_data_segmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deeplab_tf2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1013,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.load_data_os" />
         <item itemvalue="Python.load_data_classification" />
         <item itemvalue="Python.load_data_segmentation" />
         <item itemvalue="Python.load_data_classification" />
         <item itemvalue="Python.code_study" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -1078,34 +303,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="113" key="CommitChangelistDialog2/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586855559078" />
-    <state x="569" y="376" key="FileChooserDialogImpl" timestamp="1587374164354">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2240" y="340" key="FileChooserDialogImpl" timestamp="1588569601945">
+      <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="569" y="376" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587374164354" />
-    <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585030751040" />
+    <state x="2240" y="340" key="FileChooserDialogImpl/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1588569601945" />
     <state x="2279" y="512" key="Github.CreateGistDialog" timestamp="1585029022258">
       <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="2279" y="512" key="Github.CreateGistDialog/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1585029022258" />
-    <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1587352651106">
+    <state width="1899" height="277" key="GridCell.Tab.0.bottom" timestamp="1589805954986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="271" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587352651106" />
+    <state width="1899" height="277" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1589805954986" />
     <state width="1059" height="623" key="GridCell.Tab.0.bottom/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="271" key="GridCell.Tab.0.center" timestamp="1587352651106">
+    <state width="1899" height="277" key="GridCell.Tab.0.center" timestamp="1589805954986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="271" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587352651106" />
+    <state width="1899" height="277" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1589805954986" />
     <state width="1059" height="623" key="GridCell.Tab.0.center/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="271" key="GridCell.Tab.0.left" timestamp="1587352651106">
+    <state width="1899" height="277" key="GridCell.Tab.0.left" timestamp="1589805954986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="271" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587352651106" />
+    <state width="1899" height="277" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1589805954986" />
     <state width="1059" height="623" key="GridCell.Tab.0.left/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
-    <state width="1899" height="271" key="GridCell.Tab.0.right" timestamp="1587352651106">
+    <state width="1899" height="277" key="GridCell.Tab.0.right" timestamp="1589805954986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="271" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1587352651106" />
+    <state width="1899" height="277" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1589805954986" />
     <state width="1059" height="623" key="GridCell.Tab.0.right/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1586850962537" />
     <state width="1899" height="62" key="GridCell.Tab.1.bottom" timestamp="1584493236587">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -1158,10 +383,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="0" width="944" height="1128" key="dock-window-4/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584600064879" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586933738730">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup" timestamp="1589779707740">
+      <screen x="1920" y="-340" width="1080" height="1880" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1586933738730" />
-    <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1584532458201" />
+    <state x="2270" y="67" width="672" height="1226" key="search.everywhere.popup/1920.-340.1080.1880/0.0.1920.1040@1920.-340.1080.1880" timestamp="1589779707740" />
   </component>
 </project>

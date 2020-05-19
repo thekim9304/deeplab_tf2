@@ -1,11 +1,12 @@
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.applications.vgg16 import VGG16
 
 import pathlib
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def load_data_to_classification(root_path, data_gen_args, img_size=(256, 256), batch_size=32, class_mode='categorical', seed=1):
+def load_data_to_classification(root_path, data_gen_args, img_size=(224, 224), batch_size=32, class_mode='categorical', color_mode='rgb', seed=1):
     data_dir = pathlib.Path(root_path)
     image_count = len(list(data_dir.glob('*/*')))
     print('img_cnt : ', image_count)
@@ -18,6 +19,7 @@ def load_data_to_classification(root_path, data_gen_args, img_size=(256, 256), b
                                              target_size=img_size,
                                              class_mode=class_mode,
                                              batch_size=batch_size,
+                                             color_mode=color_mode,
                                              seed=seed)
 
 # cat&dog
@@ -34,13 +36,14 @@ def load_data_to_classification(root_path, data_gen_args, img_size=(256, 256), b
 #     ㄴ ...
 def main():
     root_path = '../../data/cat&dog'
-    data_gen_args = dict(rotation_range=90,
-                     width_shift_range=0.2,
-                     height_shift_range=0.2,
-                     zoom_range=0.3,
-                     horizontal_flip=True)
+    # data_gen_args = dict(rotation_range=90,
+    #                  width_shift_range=0.2,
+    #                  height_shift_range=0.2,
+    #                  zoom_range=0.3,
+    #                  horizontal_flip=True)
+    data_gen_args = dict(rescale=1./255)
     img_size = (224, 224)
-    batch_size = 3
+    batch_size = 4
     epochs = 5
 
     train_generator = load_data_to_classification(root_path=root_path,
@@ -48,6 +51,7 @@ def main():
                                                   img_size=img_size,
                                                   batch_size=batch_size,
                                                   class_mode='categorical',
+                                                  color_mode='rgb',
                                                   seed=1)
 
     # Case 1
